@@ -140,10 +140,6 @@ def runModel(scenario,rcp,coupling,level,bgcBase,nyears,aland, bland, K0,K1,K2,K
 		temp_min = np.genfromtxt("InputData/burke_temp_max.csv",delimiter=",")
 		temp_max = np.genfromtxt("InputData/burke_temp_min.csv",delimiter=",")
 
-		dgdp_data = np.genfromtxt("InputData/burke_base.csv",delimiter=",")
-		dgdp_data = dgdp_data[1:,:]
-		dgdp_high = np.genfromtxt("InputData/burke_max2.csv",delimiter=",")
-		dgdp_low = np.genfromtxt("InputData/burke_min2.csv",delimiter=",")
 
 		eFracs = {}
 		with open("InputData/eFracs"+rcp+".csv") as infile:
